@@ -1,5 +1,6 @@
 const mongoose=require("mongoose");
+const dotenv = require('dotenv')
 
-const connection =mongoose.connect("mongodb://127.0.0.1:27017/microSoft");
+const connection =mongoose.connect(process.env.mongoDB);
 
 module.exports={connection}
